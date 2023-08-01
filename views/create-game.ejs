@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section class="create-game">
+        <header>
+            <div style="float:left"><a href="/">back</a></div>
+            <div style="float:left"><h1>Create Game</h1></div>
+            <div style="clear:both"></div>
+            <br/>
+        </header>
+        <section class="game-settings">
+            <label for="roomCodeSection">Room Code</label>
+            <section id="roomCodeSection">
+                <input type="text" id="roomCode" name="roomCode" required="true" value=<%=locals.roomCode%>>
+            </section>
+            
+            
+            <label for="roleSelection">Roles</label>
+            <section id="roleSelection">
+                <div id="playerCnt"></div>
+                <table>
+                    <tr>
+                        <th style="border:1px solid black; width: 500px">Using</th>
+                        <th style="border:1px solid black; width: 500px">All Roles</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="currentRoles">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="allRoles">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+
+            <button id="submit">Submit</button>
+        </section>
+    </section>
+    <script src="/scripts/create-game.js"></script>
+</body>
+</html>

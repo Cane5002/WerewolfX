@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <div id="myPage"></div>
+        <h1>The Village</h1>
+        <div id="dayCnt">
+            <div id="time" style="float: left; padding-right: 5px"></div>
+            <div id="cnt"></div>
+        </div>
+        <div id="info" style="padding-left: 10px"></div>
+    </header>
+    <br/>
+    <div id="mayor"></div>
+    <br/>
+    <div id="currentPlayerList">
+        <div style="padding-right: 5px; font-weight: 900">Players</div>
+        <div id="players" style="padding-left: 10px"></div>
+    </div>
+    <footer id="footer"></footer>
+    <script id="villageScript" src="/scripts/village.js" 
+    roomCode="<%=locals.roomCode%>"
+    isModerator="<%=locals.isModerator%>"
+    playerId="<%=locals.playerId%>"></script>
+</body>
+</html>

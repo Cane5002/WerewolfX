@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div><a href="/<%=locals.roomCode%>/village">back</a></div>
+    </header><br/>
+    <div id="player" style="padding-left: 5px">
+        <div>Name: <%=locals.player.name%></div>
+        <div>Codename: <%=locals.player.codename%></div>
+        <div>Role: <%=locals.player.role%></div>
+    </div>
+    <div id="role">
+        <div id="updateInfo"></div>
+        <div id="updateRole"></div>
+    </div>
+    <script id="playerViewScript" src="/scripts/playerView.js" 
+    roomCode="<%=locals.roomCode%>"
+    playerId="<%=locals.player.id%>"></script>
+</body>
+</html>

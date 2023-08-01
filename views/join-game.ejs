@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div style="float:left"><a href="/">back</a></div>
+        <div style="float:left"><h1>Join Game</h1></div>
+        <div style="clear:both"></div>
+        <br/>
+    </header>
+    <div class="main">
+        <div id="roomCodeDiv">
+            <label for="roomCode">Room Code</label>
+            <input type="text" id="roomCode" value=<%=locals.roomCode%>>
+        </div>
+        <div id="nameDiv">
+            <label for="name">Nickname</label>
+            <input type="text" id="name" value=<%=locals.nickname%>>
+        </div>
+        <button id="submit">Join</button>
+    </div>
+    <script src="/scripts/join-game.js"></script>
+</body>
+</html>

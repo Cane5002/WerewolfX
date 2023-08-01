@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Room Code: <%=locals.gameSettings.roomCode%></h1>
+    </header>
+    <div id="currentPlayerList">
+        <div style="float: left; padding-right: 5px">Players</div>
+        <div id="currentPlayerCnt" style="float: left">0</div>
+        <div style="float: left">/</div>
+        <div id="maxPlayerCnt"><%=locals.gameSettings.playerCnt%></div>
+        <div id="players" style="padding-left: 10px"></div>
+    </div><br/>
+    <div id="startGame">
+        <button id="startGameBtn" disabled="true">Start Game</button>
+    </div>
+    <script src="/scripts/lobby.js"></script>
+</body>
+</html>
